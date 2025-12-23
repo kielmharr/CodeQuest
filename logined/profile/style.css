@@ -1,0 +1,149 @@
+#section-header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.site-header {
+  width: 100%;
+  padding: 18px 22px;
+}
+
+.header-container {
+  max-width: 1920px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand-group {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+}
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  position: relative;
+  margin-top: -20px;
+}
+
+.logo-icon {
+  margin-top: 6px;
+  margin-left: 6px;
+  width: 65px;
+  height: auto;
+}
+.logo-text {
+  width: 440px;
+  height: auto;
+  max-width: 350px; /* Responsive adjustment */
+  
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+  margin-left: -225px;
+  margin-top: -20px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif; /* Fallback if pixel font not available */
+}
+.nav-item {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px; /* Estimated from visual hierarchy */
+  font-weight: 500;
+  transition: opacity 0.2s;
+}
+
+.nav-item:hover {
+  opacity: 0.8;
+}
+
+.user-actions {
+  flex-shrink: 0;
+}
+
+.profile-pic {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* Circular avatar */
+  object-fit: cover;
+  border: 2px solid rgba(255, 255, 255, 0.1);
+  margin-top: -15px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .logo-text {
+    width: 200px;
+  }
+  .nav-item {
+    font-size: 18px;
+  }
+  .logo-icon {
+    width: 50px;
+  }
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header-container {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  .main-nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin: 10px 0;
+  }
+  .brand-group {
+    margin-right: auto;
+  }
+  .user-actions {
+    margin-left: auto;
+  }
+}
+
+/* CSS for section section:Background */
+#section-background {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.bg-container {
+  width: 100%;
+  max-width: 1920px;
+  margin: 0 auto;
+  position: relative;
+}
+ 
+.main-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+}
