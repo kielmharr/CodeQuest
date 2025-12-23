@@ -1,0 +1,268 @@
+#section-header {
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding:  8px;
+}
+
+.logo-group {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+}
+
+.logo-icon {
+  margin-top: 6px;
+  margin-left: 6px;
+  width: 65px;
+  height: auto;
+}
+
+.logo-text {
+  width: 440px;
+  height: auto;
+  max-width: 350px; /* Responsive adjustment */
+}
+
+.main-nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  gap: 40px;
+  margin-left: -160px;
+}
+
+.main-nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-family: 'Inter', sans-serif; /* Fallback if pixel font not available */
+}
+
+.header-cta img {
+  width: 155px;
+  height: auto;
+  cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .logo-text { max-width: 150px; }
+  .main-nav ul { gap: 20px; }
+  .main-nav a { font-size: 18px; }
+  .header-cta img { width: 140px; }
+}
+
+@media (max-width: 768px) {
+  .header-container { flex-direction: column; gap: 20px; }
+  .logo-group { margin-bottom: 10px; }
+  .main-nav ul { gap: 15px; flex-wrap: wrap; justify-content: center; }
+}
+
+/* CSS for section section:Hero */
+#section-hero {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hero-container {
+  position: relative;
+  width: 100%;
+  /* Aspect ratio based on 1920x1080 */
+  aspect-ratio: 16 / 9; 
+}
+
+.hero-bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.hero-content {
+  position: absolute;
+  bottom: 12%; /* Based on y:821 / 1080 */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  width: 23%; /* Based on 444 / 1920 */
+  min-width: 200px;
+}
+
+.hero-btn img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.hero-btn img:hover {
+  transform: scale(1.05);
+}
+
+/* CSS for section section:Journey */
+#section-journey img {
+  width: 100%;
+  height: auto;
+}
+
+/* CSS for section section:Courses */
+#section-courses {
+  position: relative;
+}
+
+.courses-container {
+  position: relative;
+}
+
+.courses-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.courses-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5%; /* Adjust based on visual */
+}
+
+.cards-grid {
+  display: flex;
+  justify-content: center;
+  gap: 4%;
+  width: 90%;
+  margin-bottom: 5%;
+}
+
+.course-card {
+  flex: 1;
+  max-width: 550px;
+  transition: transform 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+}
+
+.courses-cta {
+  width: 34%;
+  max-width: 650px;
+}
+
+.courses-cta img {
+  width: 100%;
+  cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  .cards-grid {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+  .course-card {
+    width: 80%;
+  }
+  .courses-content {
+    position: relative;
+    background-color: #0d1117; /* Fallback bg */
+    padding: 40px 0;
+  }
+  .courses-bg {
+    display: none; /* Hide fixed bg on mobile to allow content to flow */
+  }
+}
+
+/* CSS for section section:LevelUp */
+#section-levelup img {
+  width: 100%;
+  height: auto;
+}
+
+/* CSS for section section:Practice */
+#section-practice img {
+  width: 100%;
+  height: auto;
+}
+
+/* CSS for section section:Portfolio */
+#section-portfolio img {
+  width: 100%;
+  height: auto;
+}
+
+/* CSS for section section:Community */
+#section-community img {
+  width: 100%;
+  height: auto;
+}
+
+/* CSS for section section:Testimonial1 */
+#section-testimonial-1 img {
+  width: 100%;
+  height: auto;
+}
+
+/* CSS for section section:Testimonial2 */
+#section-testimonial-2 img {
+  width: 100%;
+  height: auto;
+}
+
+/* CSS for section section:CTA */
+#section-cta {
+  position: relative;
+}
+
+.cta-container {
+  position: relative;
+  width: 100%;
+}
+
+.cta-bg {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.cta-content {
+  position: absolute;
+  bottom: 15%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 32%;
+  max-width: 615px;
+}
+
+.start-btn img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.2s;
+}
+
+.start-btn img:hover {
+  transform: scale(1.05);
+}
